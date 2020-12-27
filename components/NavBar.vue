@@ -23,7 +23,7 @@
       <NuxtLink
         v-for="(item, $itemIndex) in menuItems"
         :key="$itemIndex"
-        to="localPath('/','fr')"
+        to="/"
         class="text-base font-medium"
       >
         {{ $t(`${item}`) }}
