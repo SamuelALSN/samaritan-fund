@@ -6,14 +6,14 @@
       >
         Bring joy in hearts through your donation
       </div>
-      <div class="bg-red-100 transform -rotate-1 w-full rounded-lg">
+      <div class="bg-red-100 transform -rotate-1 w-full rounded-3xl">
         <div
-          class="h-148 sm:h-120 mt-16 sm:mt-20 w-full bg-red-500 transform -rotate-2 bg-gradient-to-r from-pink-500 via-red-400 to-red-300 rounded-lg"
+          class="h-148 sm:h-112 mt-16 sm:mt-20 w-full bg-red-500 transform -rotate-2 bg-gradient-to-r from-pink-500 via-red-400 to-red-300 rounded-3xl"
         ></div>
       </div>
       <div class="absolute top-160 mt-10 sm:mt-0 sm:top-120 left-16 sm:left-24">
         <div
-          class="text-white text-3xl sm:text-5xl w-10/12 sm:w-2/5 sm:leading-snug font-bold"
+          class="text-white text-3xl sm:text-4xl w-10/12 sm:w-2/5 sm:leading-snug font-bold"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting
         </div>
@@ -44,14 +44,14 @@
         </div>
       </div>
       <img
-        class="absolute left-0 sm:left-208 w-full sm:w-2/5 rounded-lg sm:right-24 sm:h-148 top-96 sm:top-96"
+        class="absolute left-0 sm:left-184 w-full sm:w-2/5 rounded-lg sm:right-24 sm:h-136 top-96 sm:top-96"
         src="https://images.pexels.com/photos/3213283/pexels-photo-3213283.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
         alt="woman selling market"
       />
       <div class="flex flex-col sm:flex-row sm:mt-48 w-full">
-        <div class="sm:w-10/12">
+        <div class="sm:w-1/2">
           <p
-            class="font-bold text-5xl sm:text-6xl leading-snug sm:leading-relaxed sm:w-9/12 mt-10 sm:mt-24"
+            class="font-bold text-5xl leading-snug sm:leading-relaxed sm:w-9/12 mt-10 sm:mt-24"
           >
             Lorem Ipsum is simply dummy text
           </p>
@@ -59,8 +59,7 @@
             Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
             sollicitudin, lorem quis bibend auctor, nisi elit consequa, nec
             sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-            cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus
-            a odio tincidunt auctor a ornare odio. Sed non mauris lorem a odio
+            cursus a sit amet mauris. Morbi accumsan ipsum velit.
           </p>
           <div class="flex space-x-4 mt-10 mb-10 sm:mb-0">
             <button>
@@ -93,71 +92,67 @@
             </button>
           </div>
         </div>
-        <div class="sm:-mr-20">
+        <div
+          class="flex sm:flex-wrap overflow-x-scroll sm:overflow-x-hidden w-full sm:-mr-48"
+        >
           <div
-            class="flex sm:flex-wrap overflow-x-scroll sm:overflow-x-hidden w-full"
+            v-for="i in 4"
+            :key="i"
+            class="h-auto w-full sm:w-80 mx-2 sm:mx-10 flex-3 sm:flex-initial rounded-xl group hover:bg-red-500 hover:shadow-xl"
+            :class="{ 'mt-16': i % 2 !== 0, 'mb-16': i % 2 === 0 }"
           >
+            <img
+              class="h-64 w-full object-cover rounded-t-xl"
+              src="https://images.pexels.com/photos/1190208/pexels-photo-1190208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="happy children"
+            />
             <div
-              v-for="i in 4"
-              :key="i"
-              class="h-auto w-full sm:w-80 mx-2 sm:mx-12 flex-3 sm:flex-initial rounded-xl group hover:bg-red-500 hover:shadow-xl"
-              :class="{ 'mt-16': i % 2 !== 0, 'mb-16': i % 2 === 0 }"
+              class="border border-red-100 shadow-xl rounded-b-xl group-hover:text-white group-hover:text-lg group-hover:font-bold group-hover:border-transparent"
             >
-              <img
-                class="h-64 w-full object-cover rounded-t-xl"
-                src="https://images.pexels.com/photos/1190208/pexels-photo-1190208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="happy children"
-              />
-              <div
-                class="border border-red-100 shadow-xl rounded-b-xl group-hover:text-white group-hover:text-lg group-hover:font-bold group-hover:border-transparent"
-              >
-                <div class="mx-3 mb-4">
-                  <div class="flex space-x-2 mt-6">
-                    <div class="text-lg">Elements 1</div>
-                    <div class="text-lg">Elements 1</div>
-                  </div>
-                  <div class="my-4 text-xl font-medium leading-8 w-11/12">
-                    lorem ipsum title title title title title title title
-                    titletitle
-                  </div>
-                  <div class="">30.000 de 5O.000 FCFA</div>
-                  <div
-                    class="h-2 w-full rounded-lg bg-red-300 my-4 group-hover:bg-white"
-                  ></div>
-                  <div class="my-4 mx-3">70 days left</div>
-                  <button
-                    class="flex items-center group-hover:bg-white group-hover:text-red-500 transition duration-500 ease-in-out rounded-full bg-red-500 w-32 h-10 text-white font-bold text-lg focus:outline-none transform hover:scale-110 motion-reduce:transform-none mt-2"
-                  >
-                    <svg
-                      class="h-6 w-6 ml-4 mr-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    Donner
-                  </button>
+              <div class="mx-3 mb-4">
+                <div class="flex space-x-2 mt-6">
+                  <div class="text-lg">Elements 1</div>
+                  <div class="text-lg">Elements 1</div>
                 </div>
+                <div class="my-4 text-xl font-medium leading-8 w-11/12">
+                  lorem ipsum title title title title title title title
+                  titletitle
+                </div>
+                <div class="">30.000 de 5O.000 FCFA</div>
+                <div
+                  class="h-2 w-full rounded-lg bg-red-300 my-4 group-hover:bg-white"
+                ></div>
+                <div class="my-4 mx-3">70 days left</div>
+                <button
+                  class="flex items-center group-hover:bg-white group-hover:text-red-500 transition duration-500 ease-in-out rounded-full bg-red-500 w-32 h-10 text-white font-bold text-lg focus:outline-none transform hover:scale-110 motion-reduce:transform-none mt-2"
+                >
+                  <svg
+                    class="h-6 w-6 ml-4 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Donner
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="sm:mx-12">
-      <div class="bg-red-500 w-full mt-20 pb-32">
-        <div class="flex flex-col sm:flex-row mx-10 sm:mx-20 pt-24">
+    <div class="sm:mx-16">
+      <div class="bg-red-500 w-full mt-20 pb-28">
+        <div class="flex flex-col sm:flex-row mx-10 sm:mx-20 pt-20">
           <div class="sm:w-1/2">
-            <div class="italic text-4xl sm:text-5xl text-white">
-              Play your part
-            </div>
+            <div class="italic text-4xl text-white">Play your part</div>
             <div
-              class="text-white text-5xl sm:text-7xl font-bold leading-relaxed sm:leading-snug"
+              class="text-white text-5xl sm:text-5xl font-bold leading-relaxed sm:leading-snug sm:mt-5"
             >
               Your donation help Many people in need.
             </div>
@@ -169,7 +164,7 @@
               class="flex flex-col sm:flex-row sm:space-x-8 sm:ml-20 mt-8"
             >
               <img
-                class="h-56 w-72"
+                class="h-48 w-64"
                 src="https://rightcause.qodeinteractive.com/wp-content/uploads/2020/03/h1-e-img3.jpg"
                 alt="children"
               />
@@ -177,7 +172,7 @@
                 <div class="text-white text-lg leading-7 font-bold mt-4 mb-2">
                   May 13, 2020 hahotoe
                 </div>
-                <div class="text-4xl leading-snug text-white font-bold">
+                <div class="text-3xl leading-snug text-white font-bold">
                   Together we can beat poverty
                 </div>
                 <div class="text-white mt-4">
@@ -203,7 +198,7 @@
     </div>
     <div class="flex flex-col sm:flex-row sm:space-x-40 m-10 sm:m-0">
       <img
-        class="sm:h-200 w-full sm:w-1/3 sm:-mt-112"
+        class="sm:h-200 w-full sm:w-1/3 sm:-mt-124"
         src="https://images.pexels.com/photos/4260646/pexels-photo-4260646.jpeg?cs=srgb&dl=pexels-august-de-richelieu-4260646.jpg&fm=jpg"
         alt="father playing"
       />
@@ -215,14 +210,11 @@
         <div class="mt-12 text-xl font-medium leading-loose w-11/12">
           Lorem ipsum et lorem nisi quis Lorem Ipsum. Proin gravida nibh vel
           velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-          nisi elit consequa, nec sagittis sem nibh id elit. Duis sed odio sit
-          amet nibh vulputate cursus a sit amet mauris. amet nibh vulputate
-          cursus a sit amet mauris. amet nibh vulputate cursus a sit amet
-          mauris.
+          nisi elit consequa, nec sagittis sem nibh id elit. mauris.
         </div>
       </div>
     </div>
-    <div class="mt-16 sm:mt-40 mx-10 sm:mx-40">
+    <div class="mt-16 sm:mt-28 mx-10 sm:mx-40">
       <div class="flex flex-col sm:flex-row sm:space-x-32">
         <div>
           <div class="text-5xl font-bold leading-snug">Donation Goal</div>
@@ -313,12 +305,12 @@
     <div class="flex flex-col sm:flex-row mt-32 relative">
       <div class="sm:w-1/2">
         <img
-          class="h-72 sm:h-160 w-full"
+          class="h-72 sm:h-148 w-full"
           src="https://cdn.pixabay.com/photo/2016/11/04/12/43/child-1797643_960_720.jpg"
         />
       </div>
       <div
-        class="relative h-48 sm:h-160 sm:w-1/2 bg-red-500 pb-32 overflow-y-hidden"
+        class="relative h-48 sm:h-148 sm:w-1/2 bg-red-500 pb-32 overflow-y-hidden"
       >
         <div v-for="i in 6" :key="i" class="flex mx-4 mt-8">
           <div class="text-white text-6xl font-bold mt-2">01</div>
@@ -333,13 +325,13 @@
           </div>
         </div>
       </div>
-      <div class="absolute w-full sm:w-1/2 sm:right-0 top-120 sm:top-136">
+      <div class="absolute w-full sm:w-1/2 sm:right-0 top-120 sm:top-124">
         <div class="flex">
           <div
-            class="bg-black w-full h-24 flex flex-col items-center justify-center"
+            class="bg-gray-300 w-full h-24 flex flex-col items-center justify-center"
           >
             <svg
-              class="w-6 h-6 text-white"
+              class="w-6 h-6 text-black"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -374,10 +366,10 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row sm:space-x-40 my-32">
+    <div class="flex flex-col sm:flex-row sm:space-x-40 mt-20 mb-32">
       <div class="sm:w-1/2 mx-12 pt-16">
         <div class="text-red-500 italic text-4xl mb-4">Become Volunteer</div>
-        <div class="font-bold text-3xl sm:text-7xl mb-5 leading-relaxed">
+        <div class="font-bold text-3xl sm:text-6xl mb-5 sm:leading-relaxed">
           Signup Today, let's Do This !
         </div>
         <form action="">
@@ -394,7 +386,9 @@
             />
           </div>
           <div class="mt-8">
-            <select class="h-16 w-full focus:outline-none focus:border-red-500">
+            <select
+              class="h-16 w-full bg-white border border-gray-300 focus:outline-none focus:border-red-500"
+            >
               <option value="">Donations</option>
               <option value="">Volonteer</option>
             </select>
@@ -425,7 +419,7 @@
     </div>
     <div class="bg-red-100">
       <div>
-        <div class="pt-10 sm:pt-40 mx-10 sm:mx-40">
+        <div class="pt-10 sm:pt-40 mx-10 sm:mx-32">
           <div class="flex flex-col sm:flex-row">
             <div class="sm:mr-16">
               <div class="italic text-red-500 text-2xl leading-snug">
@@ -466,7 +460,9 @@
                 alt="children in joy"
               />
               <div class="bg-red-500 h-48 sm:w-96 px-8 pt-6">
-                <div class="text-white text-3xl font-bold leading-relaxed">
+                <div
+                  class="text-white text-2xl sm:text-3xl font-bold leading-relaxed"
+                >
                   By giving a little you will help out a lot
                 </div>
                 <div class="flex space-x-2 mt-5">
@@ -506,13 +502,13 @@
     </div>
 
     <div class="bg-red-500 h-auto w-full">
-      <div class="pt-32 sm:pt-64 mx-4 sm:mx-32">
+      <div class="pt-32 sm:pt-64 mx-4 sm:mx-24">
         <div class="flex flex-col sm:flex-row">
           <div class="text-5xl font-bold text-white sm:hidden">
             Get in Touch
           </div>
-          <div style="width: 99.7%">
-            <div class="text-7xl font-bold text-white hidden sm:block">
+          <div class="w-11/12">
+            <div class="text-5xl font-bold text-white hidden sm:block">
               Get in Touch
             </div>
             <div class="text-white text-2xl font-medium mt-8 sm:w-96">
@@ -558,8 +554,8 @@ export default {
       donationYearSelected: null,
       showChevron: false,
       carousel: {
-        0: [2020, 2021, 2022, 2023, 2024, 2025],
-        1: [2026, 2027, 2028, 2029, 2030],
+        0: [2021, 2020, 2021, 2022, 2023],
+        1: [2024, 2025, 2026, 2027, 2028],
       },
     }
   },

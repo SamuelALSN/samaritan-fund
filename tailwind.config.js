@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Rubik'],
+        body: ['Rubik'],
       },
       flex: {
         1: '1 1 0%',
@@ -19,6 +19,7 @@ module.exports = {
       },
       spacing: {
         88: '22rem',
+        112: '28rem',
         118: '29.5rem',
         120: '30rem',
         124: '31rem',
