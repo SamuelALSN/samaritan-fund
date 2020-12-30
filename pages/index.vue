@@ -44,7 +44,7 @@
         </div>
       </div>
       <img
-        class="absolute left-0 sm:left-184 w-full sm:w-2/5 rounded-lg sm:right-24 sm:h-136 top-96 sm:top-96"
+        class="absolute left-0 sm:left-184 w-full sm:w-2/5 rounded-lg sm:right-24 sm:h-136 top-96"
         src="https://images.pexels.com/photos/3213283/pexels-photo-3213283.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
         alt="woman selling market"
       />
@@ -198,7 +198,7 @@
     </div>
     <div class="flex flex-col sm:flex-row sm:space-x-40 m-10 sm:m-0">
       <img
-        class="sm:h-200 w-full sm:w-1/3 sm:-mt-124"
+        class="sm:h-200 w-full sm:w-1/3 sm:-mt-118"
         src="https://images.pexels.com/photos/4260646/pexels-photo-4260646.jpeg?cs=srgb&dl=pexels-august-de-richelieu-4260646.jpg&fm=jpg"
         alt="father playing"
       />
@@ -494,7 +494,7 @@
         <div
           class="flex items-center justify-center bg-white h-32 sm:h-64 w-full shadow-xl relative top-16 sm:top-32"
         >
-          <div class="text-red-500 font-bold text-2xl sm:text-8xl">
+          <div class="text-red-500 font-bold text-2xl sm:text-7xl">
             Let's end Poverty Together
           </div>
         </div>
